@@ -85,6 +85,9 @@ const syncAll = () => {
     }
 }
 
+//sync 
+syncAll();
+
 const getDocs = async (collectionName) => {
     try {
         var db = pouchDBMap[collectionName].local
@@ -103,16 +106,18 @@ const getDocs = async (collectionName) => {
 }
 
 
-syncAll();
+
 
 const find = async (collectionName, params) => {
     try {
         var db = pouchDBMap[collectionName].local;
-        var { selector, fields, sort } = params;
+        var { selector, fields, sort, skip, limit } = params;
         let searchOptions = JSON.parse(JSON.stringify({
             selector,
             fields,
-            sort
+            sort,
+            skip,
+            limit
         }))
         var result = await db.find(searchOptions)
         return result;
