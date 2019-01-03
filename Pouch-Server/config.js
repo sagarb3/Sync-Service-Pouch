@@ -1,5 +1,5 @@
 const HOSTURL = 'mongodb://localhost';
-const DBNAME = 'SyncDB2'
+const DBNAME = 'SyncDB3'
 const MASTERS_ARR = [
     'addressProofMaster',
     'ageProofMaster',

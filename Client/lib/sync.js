@@ -62,7 +62,7 @@ const replicate = (pouchObj, options) => {
             //
         })
         .on('paused', function (err) {
-           //
+            //
         })
         .on('active', function () {
             //
@@ -102,5 +102,22 @@ const getDocs = async (collectionName) => {
     }
 }
 
+
 syncAll();
+
+const find = async (collectionName, params) => {
+    try {
+        var db = pouchDBMap[collectionName].local;
+        var { selector, fields, sort } = params;
+        let searchOptions = JSON.parse(JSON.stringify({
+            selector,
+            fields,
+            sort
+        }))
+        var result = await db.find(searchOptions)
+        return result;
+    } catch (err) {
+        throw err;
+    }
+}
 
