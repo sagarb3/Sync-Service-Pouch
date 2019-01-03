@@ -1,6 +1,6 @@
-/******************************************************************************/
+###########################################MONGO_POUCH_INDEXEDDB_SYNC##############
 
-Modules Used :
+##Modules Used :
 1. PouchDb
 2. express-pouchdb
 3. socket-pouch library
