@@ -1,0 +1,23 @@
+{
+  "name": "SyncServer",
+  "version": "1.0.0",
+  "description": "Simple Application for creating sync engine on top of pouchdb and mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "keywords": ["Pouchdb","SyncApplication"],
+  "author": "Sagar Bhattacharya",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-pouchdb": "^4.1.0",
+    "mongodb": "^3.1.10",
+    "node-cron": "^2.0.3",
+    "pouchdb": "^7.0.0",
+    "pouchdb-upsert-bulk": "^1.0.2"
+  }
+}

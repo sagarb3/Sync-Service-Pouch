@@ -1,0 +1,16 @@
+{
+  "name": "Socket-Sync-Proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pouchdb": "^7.0.0",
+    "socket-pouch": "^2.0.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Socket-Sync-Client",
+  "version": "1.0.0",
+  "description": "Sync-Client for socket implementation",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"http-server -p 8080"
+  },
+  "keywords": ["SyncClient"],
+  "author": "Sagar Bhattacharya",
+  "license": "ISC"
+}
