@@ -44,7 +44,6 @@ const MASTERS_ARR = [
 ];
 module.exports = {
     HOSTURL,
-    COLLECTION_TO_FETCH_SYNC,
     DBNAME,
     MASTERS_ARR
 }
